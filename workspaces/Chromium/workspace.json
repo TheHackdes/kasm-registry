@@ -1,13 +1,12 @@
 {
-  "description": "A containerized web-based desktop environment for XPipe",
+  "description": "The Hackdes - Image",
   "docker_registry": "https://ghcr.io/",
   "image_src": "chromium.png",
   "name": "ghcr.io/thehackdes/test-reg:main",
-  "exec_config": {},
   "categories": [
     "Desktop"
   ],
-  "friendly_name": "XPipe Webtop",
+  "friendly_name": "The Hackdes - Image",
   "architecture": [
     "amd64"
   ],
@@ -15,6 +14,5 @@
     "1.17.x",
     "1.18.x",
     "1.19.x"
-  ],
-  "uncompressed_size_mb": 4222
+  ]
 }
