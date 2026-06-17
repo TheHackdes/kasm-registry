@@ -1,33 +1,24 @@
 {
-  "description": "Chromium is a free and open-source browser, primarily developed and maintained by Google.",
-  "docker_registry": "https://index.docker.io/v1/",
+  "description": "TheHackdes Image",
+  "docker_registry": "ghcr.io/thehackdes/test-reg",
   "image_src": "chromium.png",
   "run_config": {
     "hostname": "kasm"
   },
-  "exec_config": {
-    "go": {
-      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-    },
-    "assign": {
-      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-    }
-  },
   "categories": [
     "Browser"
   ],
-  "friendly_name": "Chromium",
+  "friendly_name": "TheHackdes Image",
   "architecture": [
-    "amd64",
-    "arm64"
+    "amd64"
   ],
   "compatibility": [
     {
-      "version": "1.17.x",
-      "image": "kasmweb/chromium:develop",
+      "version": "main",
+      "image": "ghcr.io/thehackdes/test-reg:main",
       "uncompressed_size_mb": 2170,
       "available_tags": [
-        "develop"
+        "main"
       ]
     }
   ]
