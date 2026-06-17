@@ -24,7 +24,7 @@
   "compatibility": [
     {
       "version": "1.17.x",
-      "image": "thehackdes/test-reg:main",
+      "image": "ghcr.io/thehackdes/test-reg:main",
       "uncompressed_size_mb": 2170,
       "available_tags": [
         "main"
