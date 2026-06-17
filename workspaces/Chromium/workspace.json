@@ -1,18 +1,28 @@
 {
-  "description": "The Hackdes - Image",
-  "docker_registry": "https://ghcr.io/",
+  "description": "The AI that actually does things.",
+  "docker_registry": "https://ghcr.io",
   "image_src": "chromium.png",
-  "name": "ghcr.io/thehackdes/test-reg:main",
+  "gpu_count": 0,
+  "run_config": {
+  },
+  "exec_config": {
+  },
   "categories": [
-    "Desktop"
+    "AI",
+    "Utilities"
   ],
-  "friendly_name": "The Hackdes - Image",
+  "friendly_name": "The Hackdes Image",
   "architecture": [
     "amd64"
   ],
   "compatibility": [
-    "1.17.x",
-    "1.18.x",
-    "1.19.x"
+    {
+      "version": "1.17.x",
+      "image": "ghcr.io/thehackdes/test-reg:main",
+      "uncompressed_size_mb": 18000,
+      "available_tags": [
+        "latest"
+      ]
+    }
   ]
 }
