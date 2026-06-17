@@ -1,28 +1,20 @@
 {
-  "description": "The AI that actually does things.",
-  "docker_registry": "https://ghcr.io",
+  "description": "A containerized web-based desktop environment for XPipe",
+  "docker_registry": "https://ghcr.io/",
   "image_src": "chromium.png",
-  "gpu_count": 0,
-  "run_config": {
-  },
-  "exec_config": {
-  },
+  "name": "ghcr.io/thehackdes/test-reg:main",
+  "exec_config": {},
   "categories": [
-    "AI",
-    "Utilities"
+    "Desktop"
   ],
-  "friendly_name": "The Hackdes Image",
+  "friendly_name": "XPipe Webtop",
   "architecture": [
     "amd64"
   ],
   "compatibility": [
-    {
-      "version": "1.17.x",
-      "image": "ghcr.io/thehackdes/test-reg:main",
-      "uncompressed_size_mb": 18000,
-      "available_tags": [
-        "latest"
-      ]
-    }
-  ]
+    "1.17.x",
+    "1.18.x",
+    "1.19.x"
+  ],
+  "uncompressed_size_mb": 4222
 }
