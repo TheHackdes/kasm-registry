@@ -1,20 +1,34 @@
 {
-  "friendly_name": "The Hackdes Image",
-  "image_src": "blob:https://thehackdes.github.io/c614971e-0179-4692-9f29-523ad1e12624",
-  "description": "The Hackdes Image",
-  "cores": 2,
-  "memory": 2768,
-  "gpu_count": 0,
-  "cpu_allocation_method": "Inherit",
+  "description": "The Hackdes Image.",
   "docker_registry": "https://ghcr.io/",
+  "image_src": "chromium.png",
+  "run_config": {
+    "hostname": "kasm"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
   "categories": [
-    "Desktop"
+    "Browser"
   ],
-  "require_gpu": false,
-  "enabled": true,
-  "image_type": "Container",
-  "name": "thehackdes/test-reg:main",
+  "friendly_name": "The Hackdes Image",
   "architecture": [
+    "amd64",
     "arm64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.17.x",
+      "image": "thehackdes/test-reg:main",
+      "uncompressed_size_mb": 2170,
+      "available_tags": [
+        "main"
+      ]
+    }
   ]
 }
